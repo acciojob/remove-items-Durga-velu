@@ -1,12 +1,9 @@
 //your JS code here. If required.
 
-function removeBtn(){
-	
+document.getElementById("removeBtn").addEventListener("click",(event)=>{
+	event.preventDefault();
+
 	let selectedTag=document.getElementById("colorSelect")
-
-
 	selectedTag.remove(selectedTag.selectedIndex)
-}
-	
 })
 
